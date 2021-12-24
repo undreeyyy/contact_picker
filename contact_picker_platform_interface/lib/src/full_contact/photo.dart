@@ -4,16 +4,17 @@ import 'package:flutter/widgets.dart';
 
 /// Representation of a user image
 class Photo {
-  final Uint8List _bytes;
+  /// An [Uint8List] containing the raw bytes of the image
+  final Uint8List bytes;
 
-  Photo(this._bytes);
+  Photo(this.bytes);
 
   factory Photo.fromMap(Map<dynamic, dynamic> map) =>
       Photo(map['photo'] as Uint8List);
 
   /// Returns the Image as an [ImageProvider]
   /// See [Image]
-  ImageProvider asProvider() => MemoryImage(_bytes);
+  ImageProvider asProvider() => MemoryImage(bytes);
 
   /// Returns the Image as an [ResizeImage]
   /// See [Image.memory]
@@ -23,7 +24,7 @@ class Photo {
     int? cacheHeight,
   }) =>
       ResizeImage.resizeIfNeeded(
-          cacheWidth, cacheHeight, MemoryImage(_bytes, scale: scale));
+          cacheWidth, cacheHeight, MemoryImage(bytes, scale: scale));
 
   /// Returns the Image as an [Image]
   /// See [Image.memory]
@@ -33,7 +34,7 @@ class Photo {
     int? cacheHeight,
   }) =>
       Image.memory(
-        _bytes,
+        bytes,
         scale: scale,
         cacheHeight: cacheHeight,
         cacheWidth: cacheWidth,

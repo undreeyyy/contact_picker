@@ -3,11 +3,6 @@ import 'dart:async';
 import 'package:contact_picker_platform_interface/contact_picker_platform_interface.dart';
 import 'package:flutter/services.dart';
 
-import 'email_contact.dart';
-import 'full_contact/full_contact.dart';
-import 'phone_contact.dart';
-import 'platform.dart';
-
 const MethodChannel _channel = const MethodChannel('me.schlaubi.contactpicker');
 
 class MethodChannelContactPicker extends ContactPickerPlatform {
@@ -35,7 +30,11 @@ class MethodChannelContactPicker extends ContactPickerPlatform {
 
   Future<T> _runCancellable<T>(FutureOr<T?> cancellable) async {
     try {
-      return (await cancellable)!;
+      final contact = await cancellable;
+      if (contact == null) {
+        throw UserCancelledPickingException();
+      }
+      return contact;
     } on PlatformException catch (e) {
       if (e.code == 'CANCELLED') {
         throw UserCancelledPickingException();

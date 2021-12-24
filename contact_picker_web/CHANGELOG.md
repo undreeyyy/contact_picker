@@ -1,10 +1,18 @@
+# 4.6.0
+
+- Update to interface 4.6.0
+- Bump dependencies
+
 # 4.5.0
+
 - Update to new interface
 
 # 4.4.0
+
 - Update to new interface
 
 # 4.3.3
+
 - Update to new interface
 
 # 4.3.1

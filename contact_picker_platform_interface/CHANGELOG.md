@@ -1,10 +1,19 @@
 # 4.5.0
+
+- Fix NPE when contact picker was cancelled (#49)
+- Make `Photo.bytes` public (#44)
+- Bump dependencies
+
+# 4.5.0
+
 - Bump dependencies
 
 # 4.4.0
+
 - Fix pickEmailContact never completes if pressing BACK on Android bug (#29)
 
 # 4.3.3
+
 - Fix pickEmailContact never completes if pressing BACK on Android bug (#29)
 
 # 4.3.2

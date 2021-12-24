@@ -1,4 +1,11 @@
+# 4.6.0
+
+- Update to Android 12
+- Update to Kotlin 1.6
+- Update to web & interface `4.6.0`
+
 # 4.5.0
+
 - Update to Kotlin 1.5.10
 - Update to Gradle 7
 - Update Android Gradle plugin
@@ -7,6 +14,7 @@
 - Support Custom Relations [Android] (#34 by alkebuware)
 
 # 4.4.0
+
 - Fix pickEmailContact never completes if pressing BACK on Android bug (#29)
 
 # 4.3.3
@@ -80,11 +88,11 @@
 # 3.1.0
 
 - Add Support for more types in Full Contact
-    - Note
-    - Company
-    - SIP
-    - Relations
-    - Custom fields (Google Contacts app only)
+  - Note
+  - Company
+  - SIP
+  - Relations
+  - Custom fields (Google Contacts app only)
 - Add Kotlin 1.4.0 Note to README
 - Fix hashCode(), ==() and toString() implementations to reflect new properties
 
