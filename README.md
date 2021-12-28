@@ -28,7 +28,7 @@ For more info read the docs or take a look at the example
 - Support Flutter Web
 
 ## Permissions
-If you target Android 11+ (API 30+) you need to obtain the `android.permission.READ_CONTACTS` permission, which is declared as a library permission [here](https://github.com/DRSchlaubi/contact_picker/blob/master/android/src/main/AndroidManifest.xml#L3) this permission will be requested automatically if the `askForPermission` parameter is true.
+If you target Android 11+ (API 30+) you need to obtain the `android.permission.READ_CONTACTS` permission, which is declared as a library permission [here](https://github.com/DRSchlaubi/contact_picker/blob/main/contact_picker/android/src/main/AndroidManifest.xml#L3) this permission will be requested automatically if the `askForPermission` parameter is true.
 
 Alternatively you can request the permission manually with [FlutterContactPicker.requestPermission()](https://pub.dev/documentation/fluttercontactpicker/latest/fluttercontactpicker/FlutterContactPicker/requestPermission.html) or check with [FlutterContactPicker.hasPermission()](https://pub.dev/documentation/fluttercontactpicker/latest/fluttercontactpicker/FlutterContactPicker/hasPermission.html)
 
