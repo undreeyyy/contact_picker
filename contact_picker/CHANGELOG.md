@@ -1,3 +1,7 @@
+# 4.7.0
+- Android 13 Support
+- Flutter 3 Support (Fix #58)
+- Make FlutterContactPicker constructor internal (Fix #55)
 # 4.6.0
 
 - Update to Android 12

@@ -6,6 +6,10 @@ import 'package:fluttercontactpicker/fluttercontactpicker.dart';
 /// Plugin to interact with contact Pickers
 /// Supports Android, Web and iOS
 class FlutterContactPicker {
+
+  // No one is supposed to make an instance of this class
+  FlutterContactPicker._();
+
   /// Checks whether this browser supports contact pickers or nor
   /// Only works for web
   /// See https://web.dev/contact-picker/ and https://developer.mozilla.org/en-US/docs/Web/API/Contact_Picker_API#Browser_compatibility for more information

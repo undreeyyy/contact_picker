@@ -1,3 +1,7 @@
+# 4.7.0
+
+- Bump for platform
+
 # 4.5.0
 
 - Fix NPE when contact picker was cancelled (#49)

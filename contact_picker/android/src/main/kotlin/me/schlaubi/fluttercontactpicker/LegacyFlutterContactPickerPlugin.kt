@@ -17,7 +17,7 @@ class LegacyFlutterContactPickerPlugin(private val registrar: PluginRegistry.Reg
 
     private inner class V1Context : AbstractPickContext() {
         override val activity: Activity
-            get() = registrar.activity()
+            get() = registrar.activity() ?: error("v1 embedding support is legacy")
         override val context: Context
             get() = registrar.context()
     }

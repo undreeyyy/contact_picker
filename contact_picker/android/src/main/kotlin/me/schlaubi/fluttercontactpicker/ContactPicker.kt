@@ -1,3 +1,5 @@
+@file:Suppress("Range")
+
 package me.schlaubi.fluttercontactpicker
 
 import android.app.Activity

@@ -19,6 +19,6 @@ object PermissionUtil : PluginRegistry.RequestPermissionsResultListener {
 
     fun remove(listener: PluginRegistry.RequestPermissionsResultListener) = listeners.remove(listener)
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>?, grantResults: IntArray?): Boolean =
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray): Boolean =
             listeners.any { it.onRequestPermissionsResult(requestCode, permissions, grantResults) }
 }
