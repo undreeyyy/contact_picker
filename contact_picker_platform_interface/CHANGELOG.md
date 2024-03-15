@@ -1,3 +1,7 @@
+# 5.0.0
+
+- Update to Flutter 3.0.0
+
 # 4.7.0
 
 - Bump for platform

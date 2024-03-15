@@ -59,7 +59,7 @@ class _MainWidgetState extends State<MainWidget> {
                   decoration: TextDecoration.underline,
                 ),
                 recognizer: TapGestureRecognizer()
-                  ..onTap = () => launch('https://web.dev/contact-picker/')),
+                  ..onTap = () => launchUrl(Uri.parse('https://web.dev/contact-picker/'))),
             TextSpan(text: ' and '),
             TextSpan(
                 text:
@@ -69,8 +69,8 @@ class _MainWidgetState extends State<MainWidget> {
                   decoration: TextDecoration.underline,
                 ),
                 recognizer: TapGestureRecognizer()
-                  ..onTap = () => launch(
-                      'https://developer.mozilla.org/en-US/docs/Web/API/Contact_Picker_API#Browser_compatibility'))
+                  ..onTap = () => launchUrl(Uri.parse(
+                      'https://developer.mozilla.org/en-US/docs/Web/API/Contact_Picker_API#Browser_compatibility')))
           ]),
     );
   }
